@@ -1,2 +1,2 @@
-# Sydney-Stations
-Sydney station stationxml files for UoM Seismosphere server
+# Seismological Association of Australia Stationxml files
+SAA stationxml files for the UoM Seismosphere server
