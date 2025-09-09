@@ -8,7 +8,10 @@ on:
       - '**.xml'
       - '!.github/**'
       - '!all.xml'
-
+      
+permissions:
+  contents: write
+  
 jobs:
   combine:
     runs-on: ubuntu-latest
