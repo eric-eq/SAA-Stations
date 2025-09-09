@@ -1,0 +1,948 @@
+<root>
+  <Source>ObsPy-Scripted</Source>
+  <Module>ObsPy 1.4.2</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2025-09-08T07:59:07.240486Z</Created>
+  <Network code="DU">
+    <Station code="WEPH">
+      <Latitude unit="DEGREES">-33.75751</Latitude>
+      <Longitude unit="DEGREES">151.0382</Longitude>
+      <Elevation unit="METERS">105.0</Elevation>
+      <Site>
+        <Name>West Pennant Hills, New South Wales, Australia</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">-33.75751</Latitude>
+        <Longitude unit="DEGREES">151.0382</Longitude>
+        <Elevation unit="METERS">105.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>200.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>215638399.99999997</Value>
+            <Frequency>5</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in meters per second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <Description>Mark Products L-4C</Description>
+              <InputUnits>
+                <Name>M/S</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.824793639409734</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>5.035439138666035</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>-5.035439138666035</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>136.48</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+              <Denominator>1.0</Denominator>
+            </Coefficients>
+            <StageGain>
+              <Value>1580000</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+  <Source>ObsPy-Scripted</Source>
+  <Module>ObsPy 1.4.2</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2025-09-08T08:05:35.199472Z</Created>
+  <Network code="DU">
+    <Station code="KENT">
+      <Latitude unit="DEGREES">-33.66516</Latitude>
+      <Longitude unit="DEGREES">151.00454</Longitude>
+      <Elevation unit="METERS">143.0</Elevation>
+      <Site>
+        <Name>Kenthurst, New South Wales, Australia</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">-33.66516</Latitude>
+        <Longitude unit="DEGREES">151.00454</Longitude>
+        <Elevation unit="METERS">143.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>200.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>215638399.99999997</Value>
+            <Frequency>5</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in meters per second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <Description>Mark Products L-4</Description>
+              <InputUnits>
+                <Name>M/S</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.824793639409734</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>5.035439138666035</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>-5.035439138666035</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>136.48</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+              <Denominator>1.0</Denominator>
+            </Coefficients>
+            <StageGain>
+              <Value>1580000</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+  <Source>ObsPy-Scripted</Source>
+  <Module>ObsPy 1.4.2</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2025-09-08T08:01:06.188222Z</Created>
+  <Network code="DU">
+    <Station code="ABRY">
+      <Latitude unit="DEGREES">-33.90348718</Latitude>
+      <Longitude unit="DEGREES">151.1229132</Longitude>
+      <Elevation unit="METERS">27.0</Elevation>
+      <Site>
+        <Name>Ashbury, New South Wales, Australia</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">-33.90348718</Latitude>
+        <Longitude unit="DEGREES">151.1229132</Longitude>
+        <Elevation unit="METERS">27.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>200.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>215638399.99999997</Value>
+            <Frequency>5</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in meters per second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <Description>Willmore MK III</Description>
+              <InputUnits>
+                <Name>M/S</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.824793639409734</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>5.035439138666035</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>-5.035439138666035</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>136.48</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+              <Denominator>1.0</Denominator>
+            </Coefficients>
+            <StageGain>
+              <Value>1580000</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+  <Source>ObsPy-Scripted</Source>
+  <Module>ObsPy 1.4.2</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2025-09-08T08:07:20.909836Z</Created>
+  <Network code="DU">
+    <Station code="OAT">
+      <Latitude unit="DEGREES">-33.79048</Latitude>
+      <Longitude unit="DEGREES">151.0306</Longitude>
+      <Elevation unit="METERS">65.0</Elevation>
+      <Site>
+        <Name>Oatlands, New South Wales, Australia</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">-33.79048</Latitude>
+        <Longitude unit="DEGREES">151.0306</Longitude>
+        <Elevation unit="METERS">65.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>200.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>215638399.99999997</Value>
+            <Frequency>5</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in meters per second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <Description>Mark Products L-4</Description>
+              <InputUnits>
+                <Name>M/S</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.824793639409734</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>5.035439138666035</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>-5.035439138666035</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>136.48</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+              <Denominator>1.0</Denominator>
+            </Coefficients>
+            <StageGain>
+              <Value>1580000</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+  <Source>ObsPy-Scripted</Source>
+  <Module>ObsPy 1.4.2</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2025-09-08T08:02:27.375332Z</Created>
+  <Network code="DU">
+    <Station code="DJO">
+      <Latitude unit="DEGREES">-33.91882891</Latitude>
+      <Longitude unit="DEGREES">151.0058938</Longitude>
+      <Elevation unit="METERS">39.0</Elevation>
+      <Site>
+        <Name>Bronte, New South Wales, Australia</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">-33.91882891</Latitude>
+        <Longitude unit="DEGREES">151.0058938</Longitude>
+        <Elevation unit="METERS">39.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>200.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>215638399.99999997</Value>
+            <Frequency>5</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in meters per second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <Description>Willmore MK III</Description>
+              <InputUnits>
+                <Name>M/S</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.824793639409734</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>5.035439138666035</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>-5.035439138666035</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>136.48</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+              <Denominator>1.0</Denominator>
+            </Coefficients>
+            <StageGain>
+              <Value>1580000</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+  <Source>ObsPy-Scripted</Source>
+  <Module>ObsPy 1.4.2</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2025-09-08T08:04:47.760020Z</Created>
+  <Network code="DU">
+    <Station code="HELEN">
+      <Latitude unit="DEGREES">-34.22019508</Latitude>
+      <Longitude unit="DEGREES">150.9757506</Longitude>
+      <Elevation unit="METERS">262.0</Elevation>
+      <Site>
+        <Name>Stanwell Tops, New South Wales, Australia</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">-34.22019508</Latitude>
+        <Longitude unit="DEGREES">150.9757506</Longitude>
+        <Elevation unit="METERS">262.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>200.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>215638399.99999997</Value>
+            <Frequency>5</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in meters per second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <Description>Mark Products L-4</Description>
+              <InputUnits>
+                <Name>M/S</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.824793639409734</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>5.035439138666035</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>-5.035439138666035</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>136.48</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+              <Denominator>1.0</Denominator>
+            </Coefficients>
+            <StageGain>
+              <Value>1580000</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+  <Source>ObsPy-Scripted</Source>
+  <Module>ObsPy 1.4.2</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2025-09-08T08:07:57.093907Z</Created>
+  <Network code="DU">
+    <Station code="USYD">
+      <Latitude unit="DEGREES">-33.888770</Latitude>
+      <Longitude unit="DEGREES">151.189480</Longitude>
+      <Elevation unit="METERS">30.0</Elevation>
+      <Site>
+        <Name>The University of Sydney, New South Wales, Australia</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">-33.888775</Latitude>
+        <Longitude unit="DEGREES">151.189481</Longitude>
+        <Elevation unit="METERS">30.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>200.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>215638399.99999997</Value>
+            <Frequency>5</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in meters per second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <Description>Mark Products L-4</Description>
+              <InputUnits>
+                <Name>M/S</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.824793639409734</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>5.035439138666035</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>-5.035439138666035</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>136.48</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+              <Denominator>1.0</Denominator>
+            </Coefficients>
+            <StageGain>
+              <Value>1580000</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+  <Source>ObsPy-Scripted</Source>
+  <Module>ObsPy 1.4.2</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2025-09-08T08:06:49.854046Z</Created>
+  <Network code="DU">
+    <Station code="NSTM">
+      <Latitude unit="DEGREES">-33.75428314</Latitude>
+      <Longitude unit="DEGREES">150.7789501</Longitude>
+      <Elevation unit="METERS">35.0</Elevation>
+      <Site>
+        <Name>North Saint Marys, New South Wales, Australia</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">-33.75428314</Latitude>
+        <Longitude unit="DEGREES">150.7789501</Longitude>
+        <Elevation unit="METERS">35.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>200.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>215638399.99999997</Value>
+            <Frequency>5</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in meters per second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <Description>Mark Products L-4</Description>
+              <InputUnits>
+                <Name>M/S</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.824793639409734</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>5.035439138666035</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>-5.035439138666035</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>136.48</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+              <Denominator>1.0</Denominator>
+            </Coefficients>
+            <StageGain>
+              <Value>1580000</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+  <Source>ObsPy-Scripted</Source>
+  <Module>ObsPy 1.4.2</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2025-09-08T08:03:30.781695Z</Created>
+  <Network code="DU">
+    <Station code="ERIKA">
+      <Latitude unit="DEGREES">-33.71539</Latitude>
+      <Longitude unit="DEGREES">150.98179</Longitude>
+      <Elevation unit="METERS">78.0</Elevation>
+      <Site>
+        <Name>Castle Hills, New South Wales, Australia</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">-33.71539</Latitude>
+        <Longitude unit="DEGREES">150.98179</Longitude>
+        <Elevation unit="METERS">78.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>200.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>215638399.99999997</Value>
+            <Frequency>5</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in meters per second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <Description>Willmore MK IIIa</Description>
+              <InputUnits>
+                <Name>M/S</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.824793639409734</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>5.035439138666035</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>-5.035439138666035</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>136.48</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+              <Denominator>1.0</Denominator>
+            </Coefficients>
+            <StageGain>
+              <Value>1580000</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+  <Source>ObsPy-Scripted</Source>
+  <Module>ObsPy 1.4.2</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2025-09-08T08:04:06.120395Z</Created>
+  <Network code="DU">
+    <Station code="HAZO">
+      <Latitude unit="DEGREES">-33.74163818</Latitude>
+      <Longitude unit="DEGREES">150.4578593</Longitude>
+      <Elevation unit="METERS">623.0</Elevation>
+      <Site>
+        <Name>Hazelbrook, New South Wales, Australia</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">-33.74163818</Latitude>
+        <Longitude unit="DEGREES">150.4578593</Longitude>
+        <Elevation unit="METERS">623.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>200.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>215638399.99999997</Value>
+            <Frequency>5</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in meters per second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <Description>Willmore MK IIIa</Description>
+              <InputUnits>
+                <Name>M/S</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.824793639409734</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>5.035439138666035</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>-5.035439138666035</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>136.48</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+              <Denominator>1.0</Denominator>
+            </Coefficients>
+            <StageGain>
+              <Value>1580000</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+  <Source>ObsPy-Scripted</Source>
+  <Module>ObsPy 1.4.2</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2025-09-08T08:01:52.687080Z</Created>
+  <Network code="DU">
+    <Station code="BRON">
+      <Latitude unit="DEGREES">-33.89891804</Latitude>
+      <Longitude unit="DEGREES">151.261644</Longitude>
+      <Elevation unit="METERS">65.0</Elevation>
+      <Site>
+        <Name>Bronte, New South Wales, Australia</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">-33.89891804</Latitude>
+        <Longitude unit="DEGREES">151.261644</Longitude>
+        <Elevation unit="METERS">65.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>200.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>215638399.99999997</Value>
+            <Frequency>5</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in meters per second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <Description>Willmore MK III</Description>
+              <InputUnits>
+                <Name>M/S</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.824793639409734</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>5.035439138666035</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-4.194151856248517</Real>
+                <Imaginary>-5.035439138666035</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>136.48</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+              <Denominator>1.0</Denominator>
+            </Coefficients>
+            <StageGain>
+              <Value>1580000</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+</root>
