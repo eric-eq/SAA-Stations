@@ -1,0 +1,32 @@
+name: Combine StationXML Files
+
+on:
+  push:
+    branches:
+      - main # Or your default branch name
+    paths:
+      - '**.xml'
+      - '!.github/**'
+      - '!all.xml'
+
+jobs:
+  combine:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Combine XML files
+        run: |
+          echo '<root>' > all.xml
+          for file in $(find . -type f -name "*.xml" ! -name "all.xml"); do
+            # Remove the XML declaration and root elements from each file before appending
+            sed -e '1,2d' -e '$d' "$file" >> all.xml
+          done
+          echo '</root>' >> all.xml
+
+      - name: Commit and push if it changed
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Automated: Combined XML files"
+          file_pattern: all.xml
