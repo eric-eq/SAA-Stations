@@ -1,4 +1,4 @@
-name: Combine StationXML Files
+name: Combine XML Files
 
 on:
   push:
@@ -8,10 +8,10 @@ on:
       - '**.xml'
       - '!.github/**'
       - '!all.xml'
-      
+
 permissions:
   contents: write
-  
+
 jobs:
   combine:
     runs-on: ubuntu-latest
@@ -19,17 +19,17 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v3
 
-      - name: Combine XML files
+      - name: Concatenate XML files
         run: |
-          echo '<root>' > all.xml
+          # Create or clear the all.xml file
+          > all.xml
+          # Find all XML files (excluding all.xml itself) and append their full content to all.xml
           for file in $(find . -type f -name "*.xml" ! -name "all.xml"); do
-            # Remove the XML declaration and root elements from each file before appending
-            sed -e '1,2d' -e '$d' "$file" >> all.xml
+            cat "$file" >> all.xml
           done
-          echo '</root>' >> all.xml
 
       - name: Commit and push if it changed
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "Automated: Combined XML files"
+          commit_message: "Automated: Concatenated XML files"
           file_pattern: all.xml
