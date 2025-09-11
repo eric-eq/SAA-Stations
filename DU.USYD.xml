@@ -3,11 +3,11 @@
   <Source>ObsPy-Scripted</Source>
   <Module>ObsPy 1.4.2</Module>
   <ModuleURI>https://www.obspy.org</ModuleURI>
-  <Created>2025-09-08T08:07:57.093907Z</Created>
+  <Created>2025-09-11T09:21:50.314839Z</Created>
   <Network code="DU">
     <Station code="USYD">
-      <Latitude unit="DEGREES">-33.88877</Latitude>
-      <Longitude unit="DEGREES">151.18948</Longitude>
+      <Latitude unit="DEGREES">-33.888775</Latitude>
+      <Longitude unit="DEGREES">151.189481</Longitude>
       <Elevation unit="METERS">30.0</Elevation>
       <Site>
         <Name>The University of Sydney, New South Wales, Australia</Name>
@@ -20,7 +20,7 @@
         <SampleRate>200.0</SampleRate>
         <Response>
           <InstrumentSensitivity>
-            <Value>215638399.99999997</Value>
+            <Value>245375300.0</Value>
             <Frequency>5</Frequency>
             <InputUnits>
               <Name>M/S</Name>
@@ -41,7 +41,7 @@
                 <Name>V</Name>
               </OutputUnits>
               <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
-              <NormalizationFactor>1.824793639409734</NormalizationFactor>
+              <NormalizationFactor>2.3402128571934817</NormalizationFactor>
               <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
               <Zero number="0">
                 <Real>0.0</Real>
@@ -52,16 +52,16 @@
                 <Imaginary>0.0</Imaginary>
               </Zero>
               <Pole number="0">
-                <Real>-4.194151856248517</Real>
-                <Imaginary>5.035439138666035</Imaginary>
+                <Real>-5.115141158574901</Real>
+                <Imaginary>5.218487783693773</Imaginary>
               </Pole>
               <Pole number="1">
-                <Real>-4.194151856248517</Real>
-                <Imaginary>-5.035439138666035</Imaginary>
+                <Real>-5.115141158574901</Real>
+                <Imaginary>-5.218487783693773</Imaginary>
               </Pole>
             </PolesZeros>
             <StageGain>
-              <Value>136.48</Value>
+              <Value>156.29</Value>
               <Frequency>5</Frequency>
             </StageGain>
           </Stage>
@@ -78,7 +78,7 @@
               <Denominator>1.0</Denominator>
             </Coefficients>
             <StageGain>
-              <Value>1580000</Value>
+              <Value>1570000</Value>
               <Frequency>5</Frequency>
             </StageGain>
           </Stage>
