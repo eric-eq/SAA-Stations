@@ -1,0 +1,68 @@
+name: Extract Coordinates to GeoJSON
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'all.xml'
+  workflow_dispatch:
+permissions:
+  contents: write
+
+jobs:
+  geojson:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install ObsPy
+        run: pip install obspy
+
+      - name: Convert StationXML to GeoJSON
+        run: |
+          python - << 'EOF'
+          import json
+          from obspy import read_inventory
+
+          inv = read_inventory("all.xml")
+
+          features = []
+          for network in inv:
+              for station in network:
+                  features.append({
+                      "type": "Feature",
+                      "geometry": {
+                          "type": "Point",
+                          "coordinates": [station.longitude, station.latitude, station.elevation]
+                      },
+                      "properties": {
+                          "network": network.code,
+                          "station": station.code,
+                          "site": station.site.name or "",
+                          "elevation_m": station.elevation
+                      }
+                  })
+
+          geojson = {
+              "type": "FeatureCollection",
+              "features": features
+          }
+
+          with open("all.geojson", "w") as f:
+              json.dump(geojson, f, indent=2)
+
+          print(f"✅ Wrote {len(features)} station features to all.geojson")
+          EOF
+
+      - name: Commit and push if it changed
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Automated: Generated all.geojson from all.xml"
+          file_pattern: all.geojson

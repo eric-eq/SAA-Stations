@@ -3,12 +3,12 @@ name: Combine XML Files
 on:
   push:
     branches:
-      - main # Or your default branch name
+      - main # or your default branch name
     paths:
       - '**.xml'
       - '!.github/**'
       - '!all.xml'
-
+  workflow_dispatch:
 permissions:
   contents: write
 
@@ -19,17 +19,43 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v3
 
-      - name: Concatenate XML files
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install ObsPy
+        run: pip install obspy
+
+      - name: Merge StationXML files
         run: |
-          # Create or clear the all.xml file
-          > all.xml
-          # Find all XML files (excluding all.xml itself) and append their full content to all.xml
-          for file in $(find . -type f -name "*.xml" ! -name "all.xml"); do
-            cat "$file" >> all.xml
-          done
+          python - << 'EOF'
+          import glob, os
+          from obspy import read_inventory
+
+          # Collect all XML files except all.xml
+          files = [f for f in glob.glob("*.xml") if f != "all.xml"]
+
+          if not files:
+              print("No station XML files found (excluding all.xml).")
+              raise SystemExit(0)
+
+          inventories = [read_inventory(f) for f in files]
+
+          inv = inventories[0]
+          for extra in inventories[1:]:
+              inv += extra
+
+          tmpfile = "all_tmp.xml"
+          inv.write(tmpfile, format="STATIONXML")
+
+          # Replace atomically
+          os.replace(tmpfile, "all.xml")
+          print(f"✅ Merged {len(files)} files into all.xml")
+          EOF
 
       - name: Commit and push if it changed
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "Automated: Concatenated XML files"
+          commit_message: "Automated: Merged StationXML files with ObsPy"
           file_pattern: all.xml
