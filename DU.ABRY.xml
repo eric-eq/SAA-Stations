@@ -10,7 +10,7 @@
       <Longitude unit="DEGREES">151.1229132</Longitude>
       <Elevation unit="METERS">27.0</Elevation>
       <Site>
-        <Name> Ashbury, New South Wales, Australia</Name>
+        <Name>Ashbury, New South Wales, Australia</Name>
       </Site>
       <Channel code="HHZ" locationCode="00">
         <Latitude unit="DEGREES">-33.90348718</Latitude>
