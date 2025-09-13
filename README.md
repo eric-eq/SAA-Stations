@@ -22,9 +22,3 @@ Triggering the workflow
 
 You can monitor the workflow runs under the Actions tab in GitHub.
 
-
-## Station Map
-
-The following map shows all SAA stations extracted from `all.xml`:
-
-![Station Map](https://raw.githubusercontent.com/SubSurfObs/SAA-Stations/main/all.geojson-map.png)
