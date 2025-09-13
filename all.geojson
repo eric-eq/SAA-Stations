@@ -1,0 +1,226 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0382,
+          -33.75751,
+          105.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "WEPH",
+        "site": "West Pennant Hills, New South Wales, Australia",
+        "elevation_m": 105.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.00454,
+          -33.66516,
+          143.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "KENT",
+        "site": "Kenthurst, New South Wales, Australia",
+        "elevation_m": 143.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1991129,
+          -33.89897794,
+          14.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "ALEX",
+        "site": "Alexandria, New South Wales, Australia",
+        "elevation_m": 14.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1229132,
+          -33.90348718,
+          27.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "ABRY",
+        "site": "Ashbury, New South Wales, Australia",
+        "elevation_m": 27.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0306,
+          -33.79048,
+          65.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "OAT",
+        "site": "Oatlands, New South Wales, Australia",
+        "elevation_m": 65.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.4113468,
+          -33.3113396,
+          15.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "LGMA",
+        "site": "Tuggerah, New South Wales, Australia",
+        "elevation_m": 15.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0058938,
+          -33.91882891,
+          39.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "DJO",
+        "site": "Bronte, New South Wales, Australia",
+        "elevation_m": 39.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.9757506,
+          -34.22019508,
+          262.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "HELEN",
+        "site": "Stanwell Tops, New South Wales, Australia",
+        "elevation_m": 262.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.189481,
+          -33.888775,
+          30.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "USYD",
+        "site": "The University of Sydney, New South Wales, Australia",
+        "elevation_m": 30.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.7789501,
+          -33.75428314,
+          35.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "NSTM",
+        "site": "North Saint Marys, New South Wales, Australia",
+        "elevation_m": 35.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.98179,
+          -33.71539,
+          78.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "ERIKA",
+        "site": "Castle Hills, New South Wales, Australia",
+        "elevation_m": 78.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.4578593,
+          -33.74163818,
+          623.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "HAZO",
+        "site": "Hazelbrook, New South Wales, Australia",
+        "elevation_m": 623.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.261644,
+          -33.89891804,
+          65.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "BRON",
+        "site": "Bronte, New South Wales, Australia",
+        "elevation_m": 65.0
+      }
+    }
+  ]
+}
