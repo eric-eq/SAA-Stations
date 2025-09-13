@@ -8,7 +8,7 @@ on:
       - '**.xml'
       - '!.github/**'
       - '!all.xml'
-
+  workflow_dispatch:
 permissions:
   contents: write
 
