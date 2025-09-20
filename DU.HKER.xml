@@ -3,7 +3,7 @@
   <Source>ObsPy-Scripted</Source>
   <Module>ObsPy 1.4.2</Module>
   <ModuleURI>https://www.obspy.org</ModuleURI>
-  <Created>2025-09-20T05:23:27.079200Z</Created>
+  <Created>2025-09-20T05:59:29.510911Z</Created>
   <Network code="DU">
     <Station code="HKER">
       <Latitude unit="DEGREES">-31.7642</Latitude>
@@ -17,7 +17,7 @@
         <Longitude unit="DEGREES">138.5525</Longitude>
         <Elevation unit="METERS">330.0</Elevation>
         <Depth unit="METERS">0.0</Depth>
-        <SampleRate>200.0</SampleRate>
+        <SampleRate>100.0</SampleRate>
         <Response>
           <InstrumentSensitivity>
             <Value>150994944000.0</Value>
