@@ -3,7 +3,7 @@
   <Source>ObsPy-Scripted</Source>
   <Module>ObsPy 1.4.2</Module>
   <ModuleURI>https://www.obspy.org</ModuleURI>
-  <Created>2025-09-20T05:28:05.640692Z</Created>
+  <Created>2025-09-20T05:29:18.649523Z</Created>
   <Network code="DU">
     <Station code="WEPH">
       <Latitude unit="DEGREES">-33.75751</Latitude>
@@ -246,6 +246,89 @@
             </Coefficients>
             <StageGain>
               <Value>1577000.0</Value>
+              <Frequency>5.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+  <Network code="DU">
+    <Station code="HKER">
+      <Latitude unit="DEGREES">-31.7642</Latitude>
+      <Longitude unit="DEGREES">138.5525</Longitude>
+      <Elevation unit="METERS">330.0</Elevation>
+      <Site>
+        <Name>Hawker, South Australia, Australia</Name>
+      </Site>
+      <Channel code="SHZ" locationCode="60">
+        <Latitude unit="DEGREES">-31.7642</Latitude>
+        <Longitude unit="DEGREES">138.5525</Longitude>
+        <Elevation unit="METERS">330.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate unit="SAMPLES/S">200.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>150994944000.0</Value>
+            <Frequency>5.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in meters per second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <Description>Willmore Mk2</Description>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in meters per second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.6153501713662135</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-3.7699111843077517</Real>
+                <Imaginary>5.026548245743669</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-3.7699111843077517</Real>
+                <Imaginary>-5.026548245743669</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>180000.0</Value>
+              <Frequency>5.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+              <Denominator>1.0</Denominator>
+            </Coefficients>
+            <StageGain>
+              <Value>838860.8</Value>
               <Frequency>5.0</Frequency>
             </StageGain>
           </Stage>
