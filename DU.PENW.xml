@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.2">
+  <Source>ObsPy-Scripted</Source>
+  <Module>ObsPy 1.4.2</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2025-09-20T05:25:29.818051Z</Created>
+  <Network code="DU">
+    <Station code="PENW">
+      <Latitude unit="DEGREES">-33.9292</Latitude>
+      <Longitude unit="DEGREES">138.6209</Longitude>
+      <Elevation unit="METERS">440.0</Elevation>
+      <Site>
+        <Name>Penwortham, South Australia, Australia</Name>
+      </Site>
+      <Channel code="SHZ" locationCode="60">
+        <Latitude unit="DEGREES">-33.9292</Latitude>
+        <Longitude unit="DEGREES">138.6209</Longitude>
+        <Elevation unit="METERS">440.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>200.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>305345331.2</Value>
+            <Frequency>5</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in meters per second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <Description>Willmore Mk2</Description>
+              <InputUnits>
+                <Name>M/S</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.8261223123060015</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-4.2082261913366</Real>
+                <Imaginary>4.999068793627634</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-4.2082261913366</Real>
+                <Imaginary>-4.999068793627634</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>364</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+              <Denominator>1.0</Denominator>
+            </Coefficients>
+            <StageGain>
+              <Value>838860.8</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+</FDSNStationXML>
