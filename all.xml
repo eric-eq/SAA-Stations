@@ -3,7 +3,7 @@
   <Source>ObsPy-Scripted</Source>
   <Module>ObsPy 1.4.2</Module>
   <ModuleURI>https://www.obspy.org</ModuleURI>
-  <Created>2025-09-20T05:29:18.649523Z</Created>
+  <Created>2025-09-20T06:01:23.927525Z</Created>
   <Network code="DU">
     <Station code="WEPH">
       <Latitude unit="DEGREES">-33.75751</Latitude>
@@ -266,7 +266,7 @@
         <Longitude unit="DEGREES">138.5525</Longitude>
         <Elevation unit="METERS">330.0</Elevation>
         <Depth unit="METERS">0.0</Depth>
-        <SampleRate unit="SAMPLES/S">200.0</SampleRate>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
         <Response>
           <InstrumentSensitivity>
             <Value>150994944000.0</Value>
@@ -1013,7 +1013,7 @@
         <Longitude unit="DEGREES">138.6209</Longitude>
         <Elevation unit="METERS">440.0</Elevation>
         <Depth unit="METERS">0.0</Depth>
-        <SampleRate unit="SAMPLES/S">200.0</SampleRate>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
         <Response>
           <InstrumentSensitivity>
             <Value>305345331.2</Value>
@@ -1262,7 +1262,7 @@
         <Longitude unit="DEGREES">140.321</Longitude>
         <Elevation unit="METERS">40.0</Elevation>
         <Depth unit="METERS">0.0</Depth>
-        <SampleRate unit="SAMPLES/S">200.0</SampleRate>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
         <Response>
           <InstrumentSensitivity>
             <Value>179516211.20000002</Value>
