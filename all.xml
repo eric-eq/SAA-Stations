@@ -3,7 +3,7 @@
   <Source>ObsPy-Scripted</Source>
   <Module>ObsPy 1.4.2</Module>
   <ModuleURI>https://www.obspy.org</ModuleURI>
-  <Created>2025-10-01T00:55:54.680828Z</Created>
+  <Created>2025-10-08T08:45:59.916252Z</Created>
   <Network code="DU">
     <Station code="OAT">
       <Latitude unit="DEGREES">-33.79048</Latitude>
@@ -767,7 +767,7 @@
         <SampleRate unit="SAMPLES/S">200.0</SampleRate>
         <Response>
           <InstrumentSensitivity>
-            <Value>215638399.99999997</Value>
+            <Value>188458080.0</Value>
             <Frequency>5.0</Frequency>
             <InputUnits>
               <Name>M/S</Name>
@@ -789,7 +789,7 @@
                 <Name>V</Name>
               </OutputUnits>
               <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
-              <NormalizationFactor>1.824793639409734</NormalizationFactor>
+              <NormalizationFactor>2.1920693606051906</NormalizationFactor>
               <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
               <Zero number="0">
                 <Real>0.0</Real>
@@ -800,16 +800,16 @@
                 <Imaginary>0.0</Imaginary>
               </Zero>
               <Pole number="0">
-                <Real>-4.194151856248517</Real>
-                <Imaginary>5.035439138666035</Imaginary>
+                <Real>-4.980806656707401</Real>
+                <Imaginary>4.800764766880264</Imaginary>
               </Pole>
               <Pole number="1">
-                <Real>-4.194151856248517</Real>
-                <Imaginary>-5.035439138666035</Imaginary>
+                <Real>-4.980806656707401</Real>
+                <Imaginary>-4.800764766880264</Imaginary>
               </Pole>
             </PolesZeros>
             <StageGain>
-              <Value>136.48</Value>
+              <Value>119.58</Value>
               <Frequency>5.0</Frequency>
             </StageGain>
           </Stage>
@@ -826,7 +826,7 @@
               <Denominator>1.0</Denominator>
             </Coefficients>
             <StageGain>
-              <Value>1580000.0</Value>
+              <Value>1576000.0</Value>
               <Frequency>5.0</Frequency>
             </StageGain>
           </Stage>
