@@ -3,7 +3,7 @@
   <Source>ObsPy-Scripted</Source>
   <Module>ObsPy 1.4.2</Module>
   <ModuleURI>https://www.obspy.org</ModuleURI>
-  <Created>2025-10-08T08:45:59.916252Z</Created>
+  <Created>2025-10-12T10:21:28.122738Z</Created>
   <Network code="DU">
     <Station code="OAT">
       <Latitude unit="DEGREES">-33.79048</Latitude>
@@ -103,7 +103,7 @@
         <SampleRate unit="SAMPLES/S">200.0</SampleRate>
         <Response>
           <InstrumentSensitivity>
-            <Value>215638399.99999997</Value>
+            <Value>181242650.0</Value>
             <Frequency>5.0</Frequency>
             <InputUnits>
               <Name>M/S</Name>
@@ -125,7 +125,7 @@
                 <Name>V</Name>
               </OutputUnits>
               <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
-              <NormalizationFactor>1.824793639409734</NormalizationFactor>
+              <NormalizationFactor>2.0853511035647787</NormalizationFactor>
               <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
               <Zero number="0">
                 <Real>0.0</Real>
@@ -136,16 +136,16 @@
                 <Imaginary>0.0</Imaginary>
               </Zero>
               <Pole number="0">
-                <Real>-4.194151856248517</Real>
-                <Imaginary>5.035439138666035</Imaginary>
+                <Real>-4.586411114975739</Real>
+                <Imaginary>5.362108764226317</Imaginary>
               </Pole>
               <Pole number="1">
-                <Real>-4.194151856248517</Real>
-                <Imaginary>-5.035439138666035</Imaginary>
+                <Real>-4.586411114975739</Real>
+                <Imaginary>-5.362108764226317</Imaginary>
               </Pole>
             </PolesZeros>
             <StageGain>
-              <Value>136.48</Value>
+              <Value>115.81</Value>
               <Frequency>5.0</Frequency>
             </StageGain>
           </Stage>
@@ -162,7 +162,7 @@
               <Denominator>1.0</Denominator>
             </Coefficients>
             <StageGain>
-              <Value>1580000.0</Value>
+              <Value>1565000.0</Value>
               <Frequency>5.0</Frequency>
             </StageGain>
           </Stage>
@@ -269,7 +269,7 @@
         <SampleRate unit="SAMPLES/S">200.0</SampleRate>
         <Response>
           <InstrumentSensitivity>
-            <Value>215638399.99999997</Value>
+            <Value>178150230.0</Value>
             <Frequency>5.0</Frequency>
             <InputUnits>
               <Name>M/S</Name>
@@ -291,7 +291,7 @@
                 <Name>V</Name>
               </OutputUnits>
               <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
-              <NormalizationFactor>1.824793639409734</NormalizationFactor>
+              <NormalizationFactor>3.407420921241605</NormalizationFactor>
               <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
               <Zero number="0">
                 <Real>0.0</Real>
@@ -302,16 +302,16 @@
                 <Imaginary>0.0</Imaginary>
               </Zero>
               <Pole number="0">
-                <Real>-4.194151856248517</Real>
-                <Imaginary>5.035439138666035</Imaginary>
+                <Real>-4.787473044805486</Real>
+                <Imaginary>8.517036020414453</Imaginary>
               </Pole>
               <Pole number="1">
-                <Real>-4.194151856248517</Real>
-                <Imaginary>-5.035439138666035</Imaginary>
+                <Real>-4.787473044805486</Real>
+                <Imaginary>-8.517036020414453</Imaginary>
               </Pole>
             </PolesZeros>
             <StageGain>
-              <Value>136.48</Value>
+              <Value>113.58</Value>
               <Frequency>5.0</Frequency>
             </StageGain>
           </Stage>
@@ -328,7 +328,7 @@
               <Denominator>1.0</Denominator>
             </Coefficients>
             <StageGain>
-              <Value>1580000.0</Value>
+              <Value>1568500.0</Value>
               <Frequency>5.0</Frequency>
             </StageGain>
           </Stage>
@@ -674,7 +674,7 @@
       <Longitude unit="DEGREES">151.0058938</Longitude>
       <Elevation unit="METERS">39.0</Elevation>
       <Site>
-        <Name>Bronte, New South Wales, Australia</Name>
+        <Name>Condell Park, New South Wales, Australia</Name>
       </Site>
       <Channel code="HHZ" locationCode="00">
         <Latitude unit="DEGREES">-33.91882891</Latitude>
@@ -684,7 +684,7 @@
         <SampleRate unit="SAMPLES/S">200.0</SampleRate>
         <Response>
           <InstrumentSensitivity>
-            <Value>215638399.99999997</Value>
+            <Value>177989625.0</Value>
             <Frequency>5.0</Frequency>
             <InputUnits>
               <Name>M/S</Name>
@@ -706,7 +706,7 @@
                 <Name>V</Name>
               </OutputUnits>
               <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
-              <NormalizationFactor>1.824793639409734</NormalizationFactor>
+              <NormalizationFactor>3.224974531831063</NormalizationFactor>
               <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
               <Zero number="0">
                 <Real>0.0</Real>
@@ -717,16 +717,16 @@
                 <Imaginary>0.0</Imaginary>
               </Zero>
               <Pole number="0">
-                <Real>-4.194151856248517</Real>
-                <Imaginary>5.035439138666035</Imaginary>
+                <Real>-4.422105819192994</Real>
+                <Imaginary>8.535807395548462</Imaginary>
               </Pole>
               <Pole number="1">
-                <Real>-4.194151856248517</Real>
-                <Imaginary>-5.035439138666035</Imaginary>
+                <Real>-4.422105819192994</Real>
+                <Imaginary>-8.535807395548462</Imaginary>
               </Pole>
             </PolesZeros>
             <StageGain>
-              <Value>136.48</Value>
+              <Value>113.55</Value>
               <Frequency>5.0</Frequency>
             </StageGain>
           </Stage>
@@ -743,7 +743,7 @@
               <Denominator>1.0</Denominator>
             </Coefficients>
             <StageGain>
-              <Value>1580000.0</Value>
+              <Value>1567500.0</Value>
               <Frequency>5.0</Frequency>
             </StageGain>
           </Stage>
