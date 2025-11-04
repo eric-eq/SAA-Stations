@@ -1,0 +1,386 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.2">
+  <Source>ObsPy-Scripted</Source>
+  <Module>ObsPy 1.4.2</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2025-11-03T08:50:16.704682Z</Created>
+  <Network code="DU">
+    <Station code="RNDA">
+      <Latitude unit="DEGREES">-35.258</Latitude>
+      <Longitude unit="DEGREES">149.082</Longitude>
+      <Elevation unit="METERS">666.0</Elevation>
+      <Site>
+        <Name>Aranda, Australian Capital Territory, Australia</Name>
+      </Site>
+      <Channel code="HHE" locationCode="60">
+        <Latitude unit="DEGREES">-35.258</Latitude>
+        <Longitude unit="DEGREES">149.082</Longitude>
+        <Elevation unit="METERS">666.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <Stage number="1">
+            <PolesZeros>
+              <Description>Manually defined sensor</Description>
+              <InputUnits>
+                <Name>M/S</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-4.443</Real>
+                <Imaginary>4.443</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-4.443</Real>
+                <Imaginary>-4.443</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <PolesZeros>
+              <Description>Datalogger Gain</Description>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <StageGain>
+              <Value>8</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="HHN" locationCode="60">
+        <Latitude unit="DEGREES">-35.258</Latitude>
+        <Longitude unit="DEGREES">149.082</Longitude>
+        <Elevation unit="METERS">666.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <Stage number="1">
+            <PolesZeros>
+              <Description>Manually defined sensor</Description>
+              <InputUnits>
+                <Name>M/S</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-4.443</Real>
+                <Imaginary>4.443</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-4.443</Real>
+                <Imaginary>-4.443</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <PolesZeros>
+              <Description>Datalogger Gain</Description>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <StageGain>
+              <Value>8</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="HHZ" locationCode="60">
+        <Latitude unit="DEGREES">-35.258</Latitude>
+        <Longitude unit="DEGREES">149.082</Longitude>
+        <Elevation unit="METERS">666.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <Stage number="1">
+            <PolesZeros>
+              <Description>Manually defined sensor</Description>
+              <InputUnits>
+                <Name>M/S</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-4.443</Real>
+                <Imaginary>4.443</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-4.443</Real>
+                <Imaginary>-4.443</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <PolesZeros>
+              <Description>Datalogger Gain</Description>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <StageGain>
+              <Value>8</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="HNE" locationCode="AB">
+        <Latitude unit="DEGREES">-35.258</Latitude>
+        <Longitude unit="DEGREES">149.082</Longitude>
+        <Elevation unit="METERS">666.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <Stage number="1" resourceId="NRL:AnaPAZ_IUmPse2_NZ0_NP4_PH05b08f2_AN3.02202ep12_FN1::NRL:Gain_SG0.254929_FN1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Acceleration in Meters Per Second Per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>3022020000000.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Pole number="0">
+                <Real>-400.8</Real>
+                <Imaginary>-567.87</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-400.8</Real>
+                <Imaginary>567.87</Imaginary>
+              </Pole>
+              <Pole number="2">
+                <Real>-1317.3</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="3">
+                <Real>-4748.4</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>0.254929</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <PolesZeros>
+              <Description>Datalogger Gain</Description>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <StageGain>
+              <Value>4e-07</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="HNN" locationCode="AB">
+        <Latitude unit="DEGREES">-35.258</Latitude>
+        <Longitude unit="DEGREES">149.082</Longitude>
+        <Elevation unit="METERS">666.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <Stage number="1" resourceId="NRL:AnaPAZ_IUmPse2_NZ0_NP4_PH05b08f2_AN3.02202ep12_FN1::NRL:Gain_SG0.254929_FN1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Acceleration in Meters Per Second Per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>3022020000000.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Pole number="0">
+                <Real>-400.8</Real>
+                <Imaginary>-567.87</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-400.8</Real>
+                <Imaginary>567.87</Imaginary>
+              </Pole>
+              <Pole number="2">
+                <Real>-1317.3</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="3">
+                <Real>-4748.4</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>0.254929</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <PolesZeros>
+              <Description>Datalogger Gain</Description>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <StageGain>
+              <Value>4e-07</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="HNZ" locationCode="AB">
+        <Latitude unit="DEGREES">-35.258</Latitude>
+        <Longitude unit="DEGREES">149.082</Longitude>
+        <Elevation unit="METERS">666.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <Stage number="1" resourceId="NRL:AnaPAZ_IUmPse2_NZ0_NP4_PH05b08f2_AN3.02202ep12_FN1::NRL:Gain_SG0.254929_FN1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Acceleration in Meters Per Second Per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>3022020000000.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Pole number="0">
+                <Real>-400.8</Real>
+                <Imaginary>-567.87</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-400.8</Real>
+                <Imaginary>567.87</Imaginary>
+              </Pole>
+              <Pole number="2">
+                <Real>-1317.3</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="3">
+                <Real>-4748.4</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>0.254929</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <PolesZeros>
+              <Description>Datalogger Gain</Description>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <StageGain>
+              <Value>4e-07</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+</FDSNStationXML>

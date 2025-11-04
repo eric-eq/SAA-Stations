@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.2">
+  <Source>ObsPy-Scripted</Source>
+  <Module>ObsPy 1.4.2</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2025-11-02T07:48:40.174184Z</Created>
+  <Network code="DU">
+    <Station code="KBRI">
+      <Latitude unit="DEGREES">-35.46352</Latitude>
+      <Longitude unit="DEGREES">148.72336</Longitude>
+      <Elevation unit="METERS">705.0</Elevation>
+      <Site>
+        <Name>Brindabella, New South Wales, Australia</Name>
+      </Site>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">-35.46352</Latitude>
+        <Longitude unit="DEGREES">148.72336</Longitude>
+        <Elevation unit="METERS">705.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>200.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>225207920.00000003</Value>
+            <Frequency>5</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in meters per second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <Description>Mark Products L-4C</Description>
+              <InputUnits>
+                <Name>M/S</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.8262234342214592</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-4.254721762609729</Real>
+                <Imaginary>4.843069837702089</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-4.254721762609729</Real>
+                <Imaginary>-4.843069837702089</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>143.08</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+              <Denominator>1.0</Denominator>
+            </Coefficients>
+            <StageGain>
+              <Value>1574000</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+</FDSNStationXML>
