@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xsi:schemaLocation="http://www.fdsn.org/xml/station/1 http://www.fdsn.org/xml/station/fdsn-station-1.1.xsd">
+  <Source>eqlogger</Source>
+  <Sender>eqlogger</Sender>
+  <Module>eqLogger 9</Module>
+  <ModuleURI/>
+  <Created>2025-11-06T07:03:17</Created>
+  <Network code="AB">
+    <TotalNumberStations>1</TotalNumberStations>
+    <Station code="HML1">
+      <Latitude>-34.40335</Latitude>
+      <Longitude>138.58887</Longitude>
+      <Elevation>73</Elevation>
+      <Site>
+        <Name/>
+      </Site>
+      <Equipment>
+        <Type>Seismograph</Type>
+        <Description>firmware_version=
+build_number=
+stalta_enable=1
+sta=0.0
+lta=0.0
+stalta_threshold=0.0
+trig_filt_lo_freq=0.0
+trig_filt_hi_freq=0.0
+level_trigger_enable=false
+level_trigger_level=0.0
+v_supply=12.87
+temperature=27.0
+card_free_pc=97.0
+card_total=16760832</Description>
+        <Manufacturer>Seismology Research Centre</Manufacturer>
+        <Model>Echo Pro</Model>
+        <SerialNumber/>
+      </Equipment>
+      <CreationDate>2025-02-18T07:03:17</CreationDate>
+      <TotalNumberChannels>3</TotalNumberChannels>
+      <Channel code="c01" locationCode="">
+        <Latitude>-34.40335</Latitude>
+        <Longitude>138.58887</Longitude>
+        <Elevation>48</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth>384</Azimuth>
+        <Dip>384</Dip>
+        <SampleRate>100</SampleRate>
+        <SensorSensitivity>0.0</SensorSensitivity>
+        <Sensor>
+          <Type>Guralp CMG-6T-1 seismometer</Type>
+          <Description>Guralp CMG-6T-1 seismometer</Description>
+          <SerialNumber>0</SerialNumber>
+        </Sensor>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>847249408.0</Value>
+            <Frequency>1</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1" resourceId="gain">
+            <StageGain>
+              <Value>1.00000</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2" resourceId="cpv">
+            <StageGain>
+              <Value>838860.8</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3" resourceId="vpu">
+            <StageGain>
+              <Value>1000.000000</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="c02" locationCode="">
+        <Latitude>-34.403350</Latitude>
+        <Longitude>138.588867</Longitude>
+        <Elevation>73</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth>384</Azimuth>
+        <Dip>384</Dip>
+        <SampleRate>100</SampleRate>
+        <SensorSensitivity>0.0</SensorSensitivity>
+        <Sensor>
+          <Type>Guralp CMG-6T-1 seismometer</Type>
+          <Description>Guralp CMG-6T-1 seismometer</Description>
+          <SerialNumber>0</SerialNumber>
+        </Sensor>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>847249408.0</Value>
+            <Frequency>1</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1" resourceId="gain">
+            <StageGain>
+              <Value>1.00000</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2" resourceId="cpv">
+            <StageGain>
+              <Value>838860.8</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3" resourceId="vpu">
+            <StageGain>
+              <Value>1000.000000</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="c03" locationCode="">
+        <Latitude>-34.403350</Latitude>
+        <Longitude>138.588867</Longitude>
+        <Elevation>73</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth>384</Azimuth>
+        <Dip>384</Dip>
+        <SampleRate>100</SampleRate>
+        <SensorSensitivity>0.0</SensorSensitivity>
+        <Sensor>
+          <Type>Guralp CMG-6T-1 seismometer</Type>
+          <Description>Guralp CMG-6T-1 seismometer</Description>
+          <SerialNumber>0</SerialNumber>
+        </Sensor>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>847249408.0</Value>
+            <Frequency>1</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1" resourceId="gain">
+            <StageGain>
+              <Value>1.00000</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2" resourceId="cpv">
+            <StageGain>
+              <Value>838860.8</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3" resourceId="vpu">
+            <StageGain>
+              <Value>1000.000000</Value>
+              <Frequency>1</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+</FDSNStationXML>
