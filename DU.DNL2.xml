@@ -5,7 +5,7 @@
   <Module>eqLogger 9</Module>
   <ModuleURI/>
   <Created>2025-02-18T07:03:17</Created>
-  <Network code="AB">
+  <Network code="DU">
     <TotalNumberStations>1</TotalNumberStations>
     <Station code="DNL2">
       <Latitude>-34.90144</Latitude>
@@ -41,8 +41,8 @@ card_total=16760832</Description>
         <Longitude>138.64314</Longitude>
         <Elevation>48</Elevation>
         <Depth>0.0</Depth>
-        <Azimuth>384</Azimuth>
-        <Dip>384</Dip>
+        <Azimuth>0</Azimuth>
+        <Dip>-90</Dip>
         <SampleRate>100</SampleRate>
         <SensorSensitivity>0.0</SensorSensitivity>
         <Sensor>
@@ -88,8 +88,8 @@ card_total=16760832</Description>
         <Longitude>138.64314</Longitude>
         <Elevation>48</Elevation>
         <Depth>0.0</Depth>
-        <Azimuth>384</Azimuth>
-        <Dip>384</Dip>
+        <Azimuth>0</Azimuth>
+        <Dip>0</Dip>
         <SampleRate>100</SampleRate>
         <SensorSensitivity>0.0</SensorSensitivity>
         <Sensor>
@@ -135,8 +135,8 @@ card_total=16760832</Description>
         <Longitude>138.64314</Longitude>
         <Elevation>48</Elevation>
         <Depth>0.0</Depth>
-        <Azimuth>384</Azimuth>
-        <Dip>384</Dip>
+        <Azimuth>90</Azimuth>
+        <Dip>0</Dip>
         <SampleRate>100</SampleRate>
         <SensorSensitivity>0.0</SensorSensitivity>
         <Sensor>
