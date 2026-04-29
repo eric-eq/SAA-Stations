@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.2">
+  <Source>ObsPy-Scripted</Source>
+  <Module>ObsPy 1.4.2</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2026-04-10T05:22:27.968814Z</Created>
+  <Network code="DU">
+    <Station code="BEGA">
+      <Latitude unit="DEGREES">-36.7297</Latitude>
+      <Longitude unit="DEGREES">149.8498</Longitude>
+      <Elevation unit="METERS">210.0</Elevation>
+      <Site>
+        <Name>Bega, New South South, Australia</Name>
+      </Site>
+      <Channel code="HHE" locationCode="00">
+        <Latitude unit="DEGREES">-36.7297</Latitude>
+        <Longitude unit="DEGREES">149.8498</Longitude>
+        <Elevation unit="METERS">210.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>196757400.0</Value>
+            <Frequency>5</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in meters per second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <Description>S6000</Description>
+              <InputUnits>
+                <Name>M/S</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>5.652364175492143</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-5.941380026469016</Real>
+                <Imaginary>10.85871973401219</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-5.941380026469016</Real>
+                <Imaginary>-10.85871973401219</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>124.53</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+              <Denominator>1.0</Denominator>
+            </Coefficients>
+            <StageGain>
+              <Value>1580000</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="HHN" locationCode="00">
+        <Latitude unit="DEGREES">-36.7297</Latitude>
+        <Longitude unit="DEGREES">149.8498</Longitude>
+        <Elevation unit="METERS">210.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>204499400.0</Value>
+            <Frequency>5</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in meters per second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <Description>S6000</Description>
+              <InputUnits>
+                <Name>M/S</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>6.724993873088389</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-6.319627781961228</Real>
+                <Imaginary>11.868347229432542</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-6.319627781961228</Real>
+                <Imaginary>-11.868347229432542</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>129.43</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+              <Denominator>1.0</Denominator>
+            </Coefficients>
+            <StageGain>
+              <Value>1580000</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="HHZ" locationCode="00">
+        <Latitude unit="DEGREES">-36.7297</Latitude>
+        <Longitude unit="DEGREES">149.8498</Longitude>
+        <Elevation unit="METERS">210.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>197436800.0</Value>
+            <Frequency>5</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in meters per second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <Description>S6000</Description>
+              <InputUnits>
+                <Name>M/S</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>3.718722919426038</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-6.135530452460866</Real>
+                <Imaginary>7.563211246646103</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-6.135530452460866</Real>
+                <Imaginary>-7.563211246646103</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>124.96</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+              <Denominator>1.0</Denominator>
+            </Coefficients>
+            <StageGain>
+              <Value>1580000</Value>
+              <Frequency>5</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+</FDSNStationXML>
