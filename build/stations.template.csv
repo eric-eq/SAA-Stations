@@ -1,0 +1,2 @@
+station,latitude,longitude,elevation,recorder,sensor,sample_rate,channels,location,site,start_date,end_date
+EXMP,-34.9000,138.6000,50,echopro,cmg6t1,100,"HHZ,HHN,HHE",00,Example SA site,2024-01-01,
