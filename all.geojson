@@ -227,6 +227,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          137.6221,
+          -33.9598,
+          21.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "WALR",
+        "site": "Wallaroo, South Australia, Australia",
+        "elevation_m": 21.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           148.72336,
           -35.46352,
           705.0
@@ -594,6 +611,23 @@
         "station": "DAMM",
         "site": "Macleod, Victoria, Australia",
         "elevation_m": 10.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.7367,
+          -34.8215,
+          300.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "UTT",
+        "site": "Uleybury area, South Australia, Australia",
+        "elevation_m": 300.0
       }
     }
   ]
