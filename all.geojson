@@ -6,84 +6,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          151.0382,
-          -33.75751,
-          105.0
+          149.06573,
+          -35.53129,
+          600.0
         ]
       },
       "properties": {
         "network": "DU",
-        "station": "WEPH",
-        "site": "West Pennant Hills, New South Wales, Australia",
-        "elevation_m": 105.0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          151.00454,
-          -33.66516,
-          143.0
-        ]
-      },
-      "properties": {
-        "network": "DU",
-        "station": "KENT",
-        "site": "Kenthurst, New South Wales, Australia",
-        "elevation_m": 143.0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          151.1991129,
-          -33.89897794,
-          14.0
-        ]
-      },
-      "properties": {
-        "network": "DU",
-        "station": "ALEX",
-        "site": "Alexandria, New South Wales, Australia",
-        "elevation_m": 14.0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          151.1229132,
-          -33.90348718,
-          27.0
-        ]
-      },
-      "properties": {
-        "network": "DU",
-        "station": "ABRY",
-        "site": "Ashbury, New South Wales, Australia",
-        "elevation_m": 27.0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          151.0306,
-          -33.79048,
-          65.0
-        ]
-      },
-      "properties": {
-        "network": "DU",
-        "station": "OAT",
-        "site": "Oatlands, New South Wales, Australia",
-        "elevation_m": 65.0
+        "station": "NNP1",
+        "site": "Tharwa, Australian Capital Territory, Australia",
+        "elevation_m": 600.0
       }
     },
     {
@@ -108,6 +40,125 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.261644,
+          -33.89891804,
+          65.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "BRON",
+        "site": "Bronte, New South Wales, Australia",
+        "elevation_m": 65.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.5169,
+          -33.6823,
+          236.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "CLV2",
+        "site": "Cleve, South Australia, Australia",
+        "elevation_m": 236.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1991129,
+          -33.89897794,
+          14.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "ALEX",
+        "site": "Alexandria, New South Wales, Australia",
+        "elevation_m": 14.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.00465,
+          -35.69172,
+          896.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "NNP2",
+        "site": "Booth, Australian Capital Territory, Australia",
+        "elevation_m": 896.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.58887,
+          -34.40335,
+          73.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "HML1",
+        "site": "Pinkerton Plains, South Australia, Australia",
+        "elevation_m": 73.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6256,
+          -34.62974,
+          107.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "MRAT",
+        "site": "Koolywurtie, South Australia, Australia",
+        "elevation_m": 107.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.00454,
+          -33.66516,
+          143.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "KENT",
+        "site": "Kenthurst, New South Wales, Australia",
+        "elevation_m": 143.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.0058938,
           -33.91882891,
           39.0
@@ -116,8 +167,263 @@
       "properties": {
         "network": "DU",
         "station": "DJO",
-        "site": "Bronte, New South Wales, Australia",
+        "site": "Condell Park, New South Wales, Australia",
         "elevation_m": 39.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.4578593,
+          -33.74163818,
+          623.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "HAZO",
+        "site": "Hazelbrook, New South Wales, Australia",
+        "elevation_m": 623.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.64313,
+          -34.90127,
+          59.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "DNL",
+        "site": "Payneham, South Australia, Australia",
+        "elevation_m": 59.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.63729,
+          -35.48951,
+          85.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "HMV1",
+        "site": "The Peters Seismological Observatory, Hindmarsh Valley, SA, Australia",
+        "elevation_m": 85.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6221,
+          -33.9598,
+          21.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "WALR",
+        "site": "Wallaroo, South Australia, Australia",
+        "elevation_m": 21.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.72336,
+          -35.46352,
+          705.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "KBRI",
+        "site": "Brindabella, New South Wales, Australia",
+        "elevation_m": 705.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.98179,
+          -33.71539,
+          78.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "ERIKA",
+        "site": "Castle Hills, New South Wales, Australia",
+        "elevation_m": 78.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.8305681,
+          -34.06025492,
+          80.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "LEU",
+        "site": "Leumeah, New South Wales, Australia",
+        "elevation_m": 80.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.0517,
+          -37.1679,
+          304.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "S88P",
+        "site": "Sandon, Victoria, Australia",
+        "elevation_m": 304.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.6209,
+          -33.9292,
+          440.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "PENW",
+        "site": "Penwortham, South Australia, Australia",
+        "elevation_m": 440.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.321,
+          -36.417,
+          40.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "WKA",
+        "site": "Willalooka, South Australia, Australia",
+        "elevation_m": 40.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.8498,
+          -36.7297,
+          210.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "BEGA",
+        "site": "Bega, New South South, Australia",
+        "elevation_m": 210.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.17244,
+          -35.88922,
+          846.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "PFLO",
+        "site": "Colinton, New South Wales, Australia",
+        "elevation_m": 846.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.0306,
+          -33.79048,
+          65.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "OAT",
+        "site": "Oatlands, New South Wales, Australia",
+        "elevation_m": 65.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.1532,
+          -35.1557,
+          562.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "BAMB",
+        "site": "Forde, Australian Capital Territory, Australia",
+        "elevation_m": 562.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.552174,
+          -34.972802,
+          17.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "PLYP",
+        "site": "Plympton Park, South Australia, Australia",
+        "elevation_m": 17.0
       }
     },
     {
@@ -159,6 +465,40 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          151.0382,
+          -33.75751,
+          105.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "WEPH",
+        "site": "West Pennant Hills, New South Wales, Australia",
+        "elevation_m": 105.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.64314,
+          -34.90144,
+          48.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "DNL2",
+        "site": "",
+        "elevation_m": 48.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           150.7789501,
           -33.75428314,
           35.0
@@ -167,7 +507,7 @@
       "properties": {
         "network": "DU",
         "station": "NSTM",
-        "site": "North Saint Marys, New South Wales, Australia",
+        "site": "North St Marys, New South Wales, Australia",
         "elevation_m": 35.0
       }
     },
@@ -176,16 +516,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          150.98179,
-          -33.71539,
-          78.0
+          151.1229132,
+          -33.90348718,
+          27.0
         ]
       },
       "properties": {
         "network": "DU",
-        "station": "ERIKA",
-        "site": "Castle Hills, New South Wales, Australia",
-        "elevation_m": 78.0
+        "station": "ABRY",
+        "site": "Ashbury, New South Wales, Australia",
+        "elevation_m": 27.0
       }
     },
     {
@@ -193,16 +533,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          150.4578593,
-          -33.74163818,
-          623.0
+          138.5525,
+          -31.7642,
+          330.0
         ]
       },
       "properties": {
         "network": "DU",
-        "station": "HAZO",
-        "site": "Hazelbrook, New South Wales, Australia",
-        "elevation_m": 623.0
+        "station": "HKER",
+        "site": "Hawker, South Australia, Australia",
+        "elevation_m": 330.0
       }
     },
     {
@@ -210,16 +550,84 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          151.261644,
-          -33.89891804,
-          65.0
+          149.07772,
+          -35.21945,
+          592.0
         ]
       },
       "properties": {
         "network": "DU",
-        "station": "BRON",
-        "site": "Bronte, New South Wales, Australia",
-        "elevation_m": 65.0
+        "station": "CLIL",
+        "site": "McKellar, Australian Capital Territory, Australia",
+        "elevation_m": 592.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1153097,
+          -33.72589416,
+          176.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "WAH",
+        "site": "Wahroonga, New South Wales, Australia",
+        "elevation_m": 176.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.082,
+          -35.258,
+          666.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "RNDA",
+        "site": "Aranda, Australian Capital Territory, Australia",
+        "elevation_m": 666.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.07881,
+          -37.73064,
+          10.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "DAMM",
+        "site": "Macleod, Victoria, Australia",
+        "elevation_m": 10.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.7367,
+          -34.8215,
+          300.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "UTT",
+        "site": "Uleybury area, South Australia, Australia",
+        "elevation_m": 300.0
       }
     }
   ]

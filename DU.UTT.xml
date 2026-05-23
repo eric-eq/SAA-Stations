@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.2">
+  <Source>SAA-Stations/build/build_stations.py</Source>
+  <Module>ObsPy 1.5.0</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2026-05-23T09:08:41.856067Z</Created>
+  <Network code="DU">
+    <Station code="UTT">
+      <Latitude unit="DEGREES">-34.8215</Latitude>
+      <Longitude unit="DEGREES">138.7367</Longitude>
+      <Elevation unit="METERS">300.0</Elevation>
+      <Site>
+        <Name>Uleybury area, South Australia, Australia</Name>
+      </Site>
+      <Channel code="EHZ" locationCode="60">
+        <Latitude unit="DEGREES">-34.8215</Latitude>
+        <Longitude unit="DEGREES">138.7367</Longitude>
+        <Elevation unit="METERS">300.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1207959552.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+</FDSNStationXML>

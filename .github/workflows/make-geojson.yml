@@ -1,11 +1,12 @@
 name: Extract Coordinates to GeoJSON
 
+# Runs AFTER "Combine XML Files" finishes (not on the same push) so it never
+# races that workflow's all.xml commit (previously the geojson push was rejected
+# non-fast-forward).
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'all.xml'
+  workflow_run:
+    workflows: ["Combine XML Files"]
+    types: [completed]
   workflow_dispatch:
 permissions:
   contents: write
@@ -13,12 +14,15 @@ permissions:
 jobs:
   geojson:
     runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Check out repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
+        with:
+          ref: main
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
@@ -62,7 +66,7 @@ jobs:
           EOF
 
       - name: Commit and push if it changed
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Automated: Generated all.geojson from all.xml"
           file_pattern: all.geojson

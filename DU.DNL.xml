@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.2">
+  <Source>SAA-Stations/build/build_stations.py</Source>
+  <Module>ObsPy 1.5.0</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2026-05-23T09:08:41.844796Z</Created>
+  <Network code="DU">
+    <Station code="DNL">
+      <Latitude unit="DEGREES">-34.90127</Latitude>
+      <Longitude unit="DEGREES">138.64313</Longitude>
+      <Elevation unit="METERS">59.0</Elevation>
+      <Site>
+        <Name>Payneham, South Australia, Australia</Name>
+      </Site>
+      <Channel code="EHE" locationCode="60">
+        <Latitude unit="DEGREES">-34.90127</Latitude>
+        <Longitude unit="DEGREES">138.64313</Longitude>
+        <Elevation unit="METERS">59.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>843893964.8000001</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="EHN" locationCode="60">
+        <Latitude unit="DEGREES">-34.90127</Latitude>
+        <Longitude unit="DEGREES">138.64313</Longitude>
+        <Elevation unit="METERS">59.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>843893964.8000001</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="EHZ" locationCode="60">
+        <Latitude unit="DEGREES">-34.90127</Latitude>
+        <Longitude unit="DEGREES">138.64313</Longitude>
+        <Elevation unit="METERS">59.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>843893964.8000001</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+</FDSNStationXML>
