@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.2">
+  <Source>SAA-Stations/build/build_stations.py (pass-through gain=1)</Source>
+  <Module>ObsPy 1.5.0</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2026-05-23T02:48:38.575628Z</Created>
+  <Network code="DU">
+    <Station code="MRAT">
+      <Latitude unit="DEGREES">-34.62974</Latitude>
+      <Longitude unit="DEGREES">137.6256</Longitude>
+      <Elevation unit="METERS">107.0</Elevation>
+      <Site>
+        <Name>Koolywurtie, South Australia, Australia</Name>
+      </Site>
+      <Channel code="EHE" locationCode="60">
+        <Latitude unit="DEGREES">-34.62974</Latitude>
+        <Longitude unit="DEGREES">137.6256</Longitude>
+        <Elevation unit="METERS">107.0</Elevation>
+        <Depth unit="METERS">1.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="EHN" locationCode="60">
+        <Latitude unit="DEGREES">-34.62974</Latitude>
+        <Longitude unit="DEGREES">137.6256</Longitude>
+        <Elevation unit="METERS">107.0</Elevation>
+        <Depth unit="METERS">1.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="EHZ" locationCode="60">
+        <Latitude unit="DEGREES">-34.62974</Latitude>
+        <Longitude unit="DEGREES">137.6256</Longitude>
+        <Elevation unit="METERS">107.0</Elevation>
+        <Depth unit="METERS">1.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+</FDSNStationXML>

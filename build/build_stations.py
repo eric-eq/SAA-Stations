@@ -1,140 +1,121 @@
 #!/usr/bin/env python3
-"""Build per-station FDSN StationXML for SA-operator SAA/DU stations from a spreadsheet.
+"""Build per-station FDSN StationXML for SAA/DU stations from the operator spreadsheet.
 
-This is the South-Australia ingestion for the SAA-Stations fork. The SA operator sends a
-spreadsheet of station updates; this turns each row into a `DU.<STA>.xml` at the REPO ROOT,
-where `.github/workflows/combine-xml.yml` picks it up and rebuilds `all.xml`.
+Default response is a **pass-through (overall sensitivity = 1.0, no stages)** — the same
+structure as VW.TEMP — which lets a station be imported into SeisComP and start
+serving/archiving immediately. The spreadsheet carries the real parameters (natural
+frequency, damping, sensor `Volts per unit`, datalogger `counts per volt`), so proper
+responses are a later refinement; broadband sensors (e.g. Nanometrics Trillium) should
+instead get their real response from the NRL.
 
-Input:  build/stations.xlsx (native Excel, preferred) or build/stations.csv
-Output: <NET>.<STA>.xml at the repo root (one per row)
+Reads these spreadsheet columns (case-insensitive; spaces ok):
+  network code, station code, location code, channel code, latitude, longitude,
+  elevation, depth, site name, sample rate, date deployed, date end, units
+`channel code` may be a comma/space list (e.g. "EHE,EHN,EHZ"); a station may span
+multiple rows (different location codes / instruments). Output: <NET>.<STA>.xml at root.
 
-Run from an env with obspy + pandas + openpyxl (e.g. the `uom_seismic_metadata` conda env):
-    python build/build_stations.py                 # auto-finds build/stations.xlsx|csv
-    python build/build_stations.py path/to/file.xlsx
-
-Responses are assembled from the small registry below (sensor poles/zeros ⊗ datalogger
-flat-gain). The script FAILS LOUDLY on an unknown or not-yet-filled instrument rather than
-emitting a placeholder response — see DU.HML1 for why dummy responses are harmful.
-
-STATUS / still to fill in:
-  * DATALOGGERS['piesmo']['counts_per_volt']  — SRC PiesMo sensitivity (counts/V).
-  * SENSORS['cmg6t1'] poles/zeros/norm        — to be harvested from a known CMG-6T-1
-                                                 (VW.MARD) or taken from the NRL.
-  * Verify channel codes against live seedlink (slinktool -Q vip.kelunji.net) first.
+Usage:
+  python build/build_stations.py "build/<sheet>.xlsx" --stations DNL MRAT CLV2 HMV1
+  python build/build_stations.py <sheet>            # build every station in the sheet
 """
-import os, sys
+import os, sys, glob, argparse
 import pandas as pd
 from obspy import UTCDateTime
 from obspy.core.inventory import Inventory, Network, Station, Channel, Site
-from obspy.core.inventory.response import (
-    Response, InstrumentSensitivity, PolesZerosResponseStage, CoefficientsTypeResponseStage,
-)
+from obspy.core.inventory.response import Response, InstrumentSensitivity
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-REPO = os.path.dirname(HERE)   # fork root (where DU.<STA>.xml live)
-
-# --- instrument registry -----------------------------------------------------
-# Sensor: velocity -> volts (poles/zeros). Datalogger: volts -> counts (flat gain).
-# Leave a value None to force a clear error instead of a dummy response.
-SENSORS = {
-    "cmg6t1": {                       # Guralp CMG-6T-1 (1 Hz corner), ground velocity
-        "sensitivity_v_per_ms": 2400.0,
-        "poles": None,                # TODO: harvest from VW.MARD (a CMG-6T-1) or NRL
-        "zeros": None,
-        "normalization_factor": None,
-        "normalization_frequency": 1.0,
-    },
-}
-DATALOGGERS = {
-    "echopro": {"counts_per_volt": 838860.8},   # SRC EchoPro (cf. Gempa-smp.md)
-    "piesmo":  {"counts_per_volt": None},        # TODO: SRC PiesMo sensitivity (counts/V)
-}
-
-DEFAULT_CHANNELS = ["HHZ", "HHN", "HHE"]
+REPO = os.path.dirname(HERE)
 ORIENT = {"Z": (0.0, -90.0), "N": (0.0, 0.0), "E": (90.0, 0.0)}
 
-def build_response(recorder, sensor, sample_rate):
-    s = SENSORS.get(sensor.lower())
-    d = DATALOGGERS.get(recorder.lower())
-    if s is None:
-        raise ValueError(f"unknown sensor '{sensor}' — add it to SENSORS")
-    if d is None:
-        raise ValueError(f"unknown recorder '{recorder}' — add it to DATALOGGERS")
-    if any(s.get(k) is None for k in ("poles", "zeros", "normalization_factor")):
-        raise NotImplementedError(f"sensor '{sensor}' poles/zeros not filled in (no dummy responses)")
-    if d.get("counts_per_volt") is None:
-        raise NotImplementedError(f"recorder '{recorder}' counts_per_volt not set (no dummy responses)")
+def passthrough_response(input_units="M/S"):
+    """Skeleton: overall sensitivity 1.0, no stages (cf. VW.TEMP)."""
+    return Response(instrument_sensitivity=InstrumentSensitivity(1.0, 1.0, input_units, "COUNTS"))
 
-    v_per_ms, cpv = s["sensitivity_v_per_ms"], d["counts_per_volt"]
-    f0 = s["normalization_frequency"]
-    sensor_stage = PolesZerosResponseStage(
-        1, v_per_ms, f0, "M/S", "V", "LAPLACE (RADIANS/SECOND)", f0,
-        s["zeros"], s["poles"], normalization_factor=s["normalization_factor"],
-    )
-    digi_stage = CoefficientsTypeResponseStage(
-        2, cpv, f0, "V", "COUNTS", "DIGITAL", numerator=[], denominator=[],
-        decimation_input_sample_rate=sample_rate, decimation_factor=1,
-        decimation_offset=0, decimation_delay=0, decimation_correction=0,
-    )
-    return Response(
-        instrument_sensitivity=InstrumentSensitivity(v_per_ms * cpv, f0, "M/S", "COUNTS"),
-        response_stages=[sensor_stage, digi_stage],
-    )
+def _val(row, *names, default=None):
+    for n in names:
+        if n in row and pd.notna(row[n]):
+            return row[n]
+    return default
 
 def _date(v):
-    if v is None or (isinstance(v, float) and pd.isna(v)) or str(v).strip() == "":
+    if v is None or (isinstance(v, float) and pd.isna(v)) or str(v).strip() in ("", "NaT"):
         return None
     return UTCDateTime(str(v))
 
-def build_channels(row, rate):
-    raw = str(row.get("channels") or "").strip()
-    codes = [c.strip() for c in raw.split(",") if c.strip()] or DEFAULT_CHANNELS
-    chans = []
-    for code in codes:
-        az, dip = ORIENT.get(code[-1].upper(), (0.0, 0.0))
-        ch = Channel(
-            code=code, location_code=str(row.get("location") or "00"),
-            latitude=row["latitude"], longitude=row["longitude"],
-            elevation=row["elevation"], depth=float(row.get("depth") or 0.0),
-            azimuth=az, dip=dip, sample_rate=rate,
-            start_date=_date(row.get("start_date")), end_date=_date(row.get("end_date")),
-        )
-        ch.response = build_response(str(row["recorder"]), str(row["sensor"]), rate)
-        chans.append(ch)
-    return chans
+def _units(row):
+    u = str(_val(row, "units", default="") or "").lower()
+    return "M/S**2" if "m/s/s" in u or "m/s2" in u else "M/S"
 
-def main(path=None):
-    if path is None:
-        for cand in ("stations.xlsx", "stations.csv"):
-            if os.path.exists(os.path.join(HERE, cand)):
-                path = os.path.join(HERE, cand); break
+def find_spreadsheet(path):
+    if path:
+        return path
+    cands = [f for f in glob.glob(os.path.join(HERE, "*.xlsx")) + glob.glob(os.path.join(HERE, "*.csv"))
+             if "template" not in os.path.basename(f).lower() and not os.path.basename(f).startswith("~$")]
+    cands.sort(key=os.path.getmtime, reverse=True)
+    return cands[0] if cands else None
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("spreadsheet", nargs="?")
+    ap.add_argument("--stations", nargs="*", help="only these station codes (default: all)")
+    args = ap.parse_args()
+
+    path = find_spreadsheet(args.spreadsheet)
     if not path or not os.path.exists(path):
-        sys.exit("No spreadsheet found. Put it at build/stations.xlsx (or .csv).")
-
+        sys.exit("No spreadsheet found (build/*.xlsx|csv).")
+    print(f"reading {os.path.basename(path)}")
     df = pd.read_excel(path) if path.lower().endswith((".xlsx", ".xls")) else pd.read_csv(path)
     df.columns = [c.strip().lower() for c in df.columns]
-    required = {"station", "latitude", "longitude", "elevation", "recorder", "sensor"}
-    missing = required - set(df.columns)
-    if missing:
-        sys.exit(f"spreadsheet missing required columns: {sorted(missing)}")
 
-    n = 0
+    targets = {s.upper() for s in args.stations} if args.stations else None
+    by_sta = {}
     for _, row in df.iterrows():
-        net = str(row.get("network") or "DU").upper()
-        sta_code = str(row["station"]).strip().upper()
-        rate = float(row.get("sample_rate") or 100.0)
-        sta = Station(code=sta_code, latitude=row["latitude"], longitude=row["longitude"],
-                      elevation=row["elevation"], site=Site(name=str(row.get("site") or "")))
-        sta.channels = build_channels(row, rate)
+        code = str(_val(row, "station code", "station", default="") or "").strip().upper()
+        if not code or (targets and code not in targets):
+            continue
+        by_sta.setdefault(code, []).append(row)
+
+    if targets:
+        for miss in sorted(targets - set(by_sta)):
+            print(f"  WARNING: {miss} not found in spreadsheet — skipped")
+
+    written = 0
+    for code, rows in by_sta.items():
+        r0 = rows[0]
+        net = str(_val(r0, "network code", "network", default="DU")).upper()
+        sta = Station(code=code, latitude=float(r0["latitude"]), longitude=float(r0["longitude"]),
+                      elevation=float(r0["elevation"]),
+                      site=Site(name=str(_val(r0, "site name", "site", default="") or "")))
+        for row in rows:
+            loc = str(_val(row, "location code", "location", default="00"))
+            loc = "00" if loc.lower() in ("nan", "") else loc
+            rate = float(_val(row, "sample rate", "sample_rate", default=100.0))
+            depth = float(_val(row, "depth", default=0.0) or 0.0)
+            iu = _units(row)
+            raw = str(_val(row, "channel code", "channels", default="") or "")
+            for ch_code in [c.strip() for c in raw.replace(";", ",").split(",") if c.strip()]:
+                az, dip = ORIENT.get(ch_code[-1].upper(), (0.0, 0.0))
+                ch = Channel(code=ch_code, location_code=loc,
+                             latitude=sta.latitude, longitude=sta.longitude,
+                             elevation=sta.elevation, depth=depth, azimuth=az, dip=dip,
+                             sample_rate=rate,
+                             start_date=_date(_val(row, "date deployed", "start_date")),
+                             end_date=_date(_val(row, "date end", "end_date")))
+                ch.response = passthrough_response(iu)
+                sta.channels.append(ch)
         starts = [c.start_date for c in sta.channels if c.start_date]
         sta.start_date = min(starts) if starts else None
+        if not sta.channels:
+            print(f"  WARNING: {code} has no channel codes in the sheet — skipped")
+            continue
         inv = Inventory(networks=[Network(code=net, stations=[sta])],
-                        source="SAA-Stations/build/build_stations.py")
-        out = os.path.join(REPO, f"{net}.{sta_code}.xml")
+                        source="SAA-Stations/build/build_stations.py (pass-through gain=1)")
+        out = os.path.join(REPO, f"{net}.{code}.xml")
         inv.write(out, format="STATIONXML")
-        print(f"wrote {net}.{sta_code}.xml  ({len(sta.channels)} channels @ {rate:.0f} Hz)")
-        n += 1
-    print(f"\ndone: {n} station file(s) at repo root. Commit + push → combine-xml rebuilds all.xml.")
+        print(f"wrote {net}.{code}.xml — {len(sta.channels)} channels (pass-through gain=1)")
+        written += 1
+    print(f"\n{written} station file(s) at repo root. Commit + push → combine-xml rebuilds all.xml.")
 
 if __name__ == "__main__":
-    main(sys.argv[1] if len(sys.argv) > 1 else None)
+    main()
