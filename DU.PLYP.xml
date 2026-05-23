@@ -3,24 +3,24 @@
   <Source>ObsPy-Scripted</Source>
   <Module>ObsPy 1.4.2</Module>
   <ModuleURI>https://www.obspy.org</ModuleURI>
-  <Created>2025-10-19T09:26:53.493585Z</Created>
+  <Created>2025-11-02T07:20:28.882131Z</Created>
   <Network code="DU">
-    <Station code="HAZO">
-      <Latitude unit="DEGREES">-33.74163818</Latitude>
-      <Longitude unit="DEGREES">150.4578593</Longitude>
-      <Elevation unit="METERS">623.0</Elevation>
+    <Station code="PLYP">
+      <Latitude unit="DEGREES">-34.972802</Latitude>
+      <Longitude unit="DEGREES">138.552174</Longitude>
+      <Elevation unit="METERS">17.0</Elevation>
       <Site>
-        <Name>Hazelbrook, New South Wales, Australia</Name>
+        <Name>Plympton Park, South Australia, Australia</Name>
       </Site>
       <Channel code="HHZ" locationCode="00">
-        <Latitude unit="DEGREES">-33.74163818</Latitude>
-        <Longitude unit="DEGREES">150.4578593</Longitude>
-        <Elevation unit="METERS">623.0</Elevation>
+        <Latitude unit="DEGREES">-34.972802</Latitude>
+        <Longitude unit="DEGREES">138.552174</Longitude>
+        <Elevation unit="METERS">17.0</Elevation>
         <Depth unit="METERS">0.0</Depth>
         <SampleRate>200.0</SampleRate>
         <Response>
           <InstrumentSensitivity>
-            <Value>257886600.00000003</Value>
+            <Value>225207920.00000003</Value>
             <Frequency>5</Frequency>
             <InputUnits>
               <Name>M/S</Name>
@@ -33,7 +33,7 @@
           </InstrumentSensitivity>
           <Stage number="1">
             <PolesZeros>
-              <Description>Mark Products L-4</Description>
+              <Description>Mark Products L-4C</Description>
               <InputUnits>
                 <Name>M/S</Name>
               </InputUnits>
@@ -41,7 +41,7 @@
                 <Name>V</Name>
               </OutputUnits>
               <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
-              <NormalizationFactor>2.232636855157161</NormalizationFactor>
+              <NormalizationFactor>1.8262234342214592</NormalizationFactor>
               <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
               <Zero number="0">
                 <Real>0.0</Real>
@@ -52,16 +52,16 @@
                 <Imaginary>0.0</Imaginary>
               </Zero>
               <Pole number="0">
-                <Real>-5.039617271182603</Real>
-                <Imaginary>4.857449546144065</Imaginary>
+                <Real>-4.254721762609729</Real>
+                <Imaginary>4.843069837702089</Imaginary>
               </Pole>
               <Pole number="1">
-                <Real>-5.039617271182603</Real>
-                <Imaginary>-4.857449546144065</Imaginary>
+                <Real>-4.254721762609729</Real>
+                <Imaginary>-4.843069837702089</Imaginary>
               </Pole>
             </PolesZeros>
             <StageGain>
-              <Value>164.05</Value>
+              <Value>143.08</Value>
               <Frequency>5</Frequency>
             </StageGain>
           </Stage>
@@ -78,7 +78,7 @@
               <Denominator>1.0</Denominator>
             </Coefficients>
             <StageGain>
-              <Value>1572000</Value>
+              <Value>1574000</Value>
               <Frequency>5</Frequency>
             </StageGain>
           </Stage>
