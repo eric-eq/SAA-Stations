@@ -57,6 +57,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          136.5169,
+          -33.6823,
+          236.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "CLV2",
+        "site": "Cleve, South Australia, Australia",
+        "elevation_m": 236.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.1991129,
           -33.89897794,
           14.0
@@ -108,6 +125,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          137.6256,
+          -34.62974,
+          107.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "MRAT",
+        "site": "Koolywurtie, South Australia, Australia",
+        "elevation_m": 107.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           151.00454,
           -33.66516,
           143.0
@@ -152,6 +186,40 @@
         "station": "HAZO",
         "site": "Hazelbrook, New South Wales, Australia",
         "elevation_m": 623.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.64313,
+          -34.90127,
+          59.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "DNL",
+        "site": "Payneham, South Australia, Australia",
+        "elevation_m": 59.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.63729,
+          -35.48951,
+          85.0
+        ]
+      },
+      "properties": {
+        "network": "DU",
+        "station": "HMV1",
+        "site": "The Peters Seismological Observatory, Hindmarsh Valley, SA, Australia",
+        "elevation_m": 85.0
       }
     },
     {
