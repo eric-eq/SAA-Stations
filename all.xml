@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.2">
-  <Source>ObsPy-Scripted,eqlogger</Source>
+  <Source>ObsPy-Scripted,SAA-Stations/build/build_stations.py (pass-through gain=1),eqlogger</Source>
   <Sender>eqlogger</Sender>
   <Module>ObsPy 1.5.0</Module>
   <ModuleURI>https://www.obspy.org</ModuleURI>
-  <Created>2026-05-23T00:38:10.399233Z</Created>
+  <Created>2026-05-23T02:59:29.239914Z</Created>
   <Network code="DU">
     <Station code="NNP1">
       <Latitude unit="DEGREES">-35.53129</Latitude>
@@ -250,6 +250,79 @@
               <Frequency>5.0</Frequency>
             </StageGain>
           </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+  <Network code="DU">
+    <Station code="CLV2">
+      <Latitude unit="DEGREES">-33.6823</Latitude>
+      <Longitude unit="DEGREES">136.5169</Longitude>
+      <Elevation unit="METERS">236.0</Elevation>
+      <Site>
+        <Name>Cleve, South Australia, Australia</Name>
+      </Site>
+      <Channel code="EHE" locationCode="60">
+        <Latitude unit="DEGREES">-33.6823</Latitude>
+        <Longitude unit="DEGREES">136.5169</Longitude>
+        <Elevation unit="METERS">236.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="EHN" locationCode="60">
+        <Latitude unit="DEGREES">-33.6823</Latitude>
+        <Longitude unit="DEGREES">136.5169</Longitude>
+        <Elevation unit="METERS">236.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="EHZ" locationCode="60">
+        <Latitude unit="DEGREES">-33.6823</Latitude>
+        <Longitude unit="DEGREES">136.5169</Longitude>
+        <Elevation unit="METERS">236.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
         </Response>
       </Channel>
     </Station>
@@ -851,6 +924,79 @@
     </Station>
   </Network>
   <Network code="DU">
+    <Station code="MRAT">
+      <Latitude unit="DEGREES">-34.62974</Latitude>
+      <Longitude unit="DEGREES">137.6256</Longitude>
+      <Elevation unit="METERS">107.0</Elevation>
+      <Site>
+        <Name>Koolywurtie, South Australia, Australia</Name>
+      </Site>
+      <Channel code="EHE" locationCode="60">
+        <Latitude unit="DEGREES">-34.62974</Latitude>
+        <Longitude unit="DEGREES">137.6256</Longitude>
+        <Elevation unit="METERS">107.0</Elevation>
+        <Depth unit="METERS">1.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="EHN" locationCode="60">
+        <Latitude unit="DEGREES">-34.62974</Latitude>
+        <Longitude unit="DEGREES">137.6256</Longitude>
+        <Elevation unit="METERS">107.0</Elevation>
+        <Depth unit="METERS">1.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="EHZ" locationCode="60">
+        <Latitude unit="DEGREES">-34.62974</Latitude>
+        <Longitude unit="DEGREES">137.6256</Longitude>
+        <Elevation unit="METERS">107.0</Elevation>
+        <Depth unit="METERS">1.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+  <Network code="DU">
     <Station code="KENT">
       <Latitude unit="DEGREES">-33.66516</Latitude>
       <Longitude unit="DEGREES">151.00454</Longitude>
@@ -1095,6 +1241,152 @@
               <Frequency>5.0</Frequency>
             </StageGain>
           </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+  <Network code="DU">
+    <Station code="DNL">
+      <Latitude unit="DEGREES">-34.90127</Latitude>
+      <Longitude unit="DEGREES">138.64313</Longitude>
+      <Elevation unit="METERS">59.0</Elevation>
+      <Site>
+        <Name>Payneham, South Australia, Australia</Name>
+      </Site>
+      <Channel code="SHE" locationCode="60">
+        <Latitude unit="DEGREES">-34.90127</Latitude>
+        <Longitude unit="DEGREES">138.64313</Longitude>
+        <Elevation unit="METERS">59.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="SHN" locationCode="60">
+        <Latitude unit="DEGREES">-34.90127</Latitude>
+        <Longitude unit="DEGREES">138.64313</Longitude>
+        <Elevation unit="METERS">59.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="SHZ" locationCode="60">
+        <Latitude unit="DEGREES">-34.90127</Latitude>
+        <Longitude unit="DEGREES">138.64313</Longitude>
+        <Elevation unit="METERS">59.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+  <Network code="DU">
+    <Station code="HMV1">
+      <Latitude unit="DEGREES">-35.48951</Latitude>
+      <Longitude unit="DEGREES">138.63729</Longitude>
+      <Elevation unit="METERS">85.0</Elevation>
+      <Site>
+        <Name>The Peters Seismological Observatory, Hindmarsh Valley, SA, Australia</Name>
+      </Site>
+      <Channel code="EHE" locationCode="60">
+        <Latitude unit="DEGREES">-35.48951</Latitude>
+        <Longitude unit="DEGREES">138.63729</Longitude>
+        <Elevation unit="METERS">85.0</Elevation>
+        <Depth unit="METERS">8.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="EHN" locationCode="60">
+        <Latitude unit="DEGREES">-35.48951</Latitude>
+        <Longitude unit="DEGREES">138.63729</Longitude>
+        <Elevation unit="METERS">85.0</Elevation>
+        <Depth unit="METERS">8.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="EHZ" locationCode="60">
+        <Latitude unit="DEGREES">-35.48951</Latitude>
+        <Longitude unit="DEGREES">138.63729</Longitude>
+        <Elevation unit="METERS">85.0</Elevation>
+        <Depth unit="METERS">8.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
         </Response>
       </Channel>
     </Station>
