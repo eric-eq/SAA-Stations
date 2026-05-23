@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.2">
-  <Source>SAA-Stations/build/build_stations.py (pass-through gain=1)</Source>
+  <Source>SAA-Stations/build/build_stations.py</Source>
   <Module>ObsPy 1.5.0</Module>
   <ModuleURI>https://www.obspy.org</ModuleURI>
-  <Created>2026-05-23T02:48:38.581826Z</Created>
+  <Created>2026-05-23T09:08:41.457368Z</Created>
   <Network code="DU">
     <Station code="HMV1">
       <Latitude unit="DEGREES">-35.48951</Latitude>

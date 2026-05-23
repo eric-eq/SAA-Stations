@@ -28,9 +28,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 ORIENT = {"Z": (0.0, -90.0), "N": (0.0, 0.0), "E": (90.0, 0.0)}
 
-def passthrough_response(input_units="M/S"):
-    """Skeleton: overall sensitivity 1.0, no stages (cf. VW.TEMP)."""
-    return Response(instrument_sensitivity=InstrumentSensitivity(1.0, 1.0, input_units, "COUNTS"))
+def sens_response(input_units, overall):
+    """Sensitivity-only response: overall sensitivity, no PAZ stages. overall=None falls
+    back to a gain-1 placeholder (cf. VW.TEMP). overall = sensor V/unit x datalogger counts/V."""
+    return Response(instrument_sensitivity=InstrumentSensitivity(
+        1.0 if overall is None else overall, 1.0, input_units, "COUNTS"))
 
 def _val(row, *names, default=None):
     for n in names:
@@ -93,6 +95,8 @@ def main():
             rate = float(_val(row, "sample rate", "sample_rate", default=100.0))
             depth = float(_val(row, "depth", default=0.0) or 0.0)
             iu = _units(row)
+            vpu = _val(row, "volts per unit"); cpv = _val(row, "counts per volt")
+            overall = float(vpu) * float(cpv) if vpu is not None and cpv is not None else None
             raw = str(_val(row, "channel code", "channels", default="") or "")
             for ch_code in [c.strip() for c in raw.replace(";", ",").split(",") if c.strip()]:
                 az, dip = ORIENT.get(ch_code[-1].upper(), (0.0, 0.0))
@@ -102,7 +106,7 @@ def main():
                              sample_rate=rate,
                              start_date=_date(_val(row, "date deployed", "start_date")),
                              end_date=_date(_val(row, "date end", "end_date")))
-                ch.response = passthrough_response(iu)
+                ch.response = sens_response(iu, overall)
                 sta.channels.append(ch)
         starts = [c.start_date for c in sta.channels if c.start_date]
         sta.start_date = min(starts) if starts else None
@@ -110,10 +114,12 @@ def main():
             print(f"  WARNING: {code} has no channel codes in the sheet — skipped")
             continue
         inv = Inventory(networks=[Network(code=net, stations=[sta])],
-                        source="SAA-Stations/build/build_stations.py (pass-through gain=1)")
+                        source="SAA-Stations/build/build_stations.py")
         out = os.path.join(REPO, f"{net}.{code}.xml")
         inv.write(out, format="STATIONXML")
-        print(f"wrote {net}.{code}.xml — {len(sta.channels)} channels (pass-through gain=1)")
+        sv = sta.channels[0].response.instrument_sensitivity.value
+        tag = " [PLACEHOLDER gain=1]" if sv == 1.0 else ""
+        print(f"wrote {net}.{code}.xml — {len(sta.channels)} ch, overall sens={sv:g}{tag}")
         written += 1
     print(f"\n{written} station file(s) at repo root. Commit + push → combine-xml rebuilds all.xml.")
 

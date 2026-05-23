@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.2">
+  <Source>SAA-Stations/build/build_stations.py</Source>
+  <Module>ObsPy 1.5.0</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2026-05-23T09:08:41.456194Z</Created>
+  <Network code="DU">
+    <Station code="WALR">
+      <Latitude unit="DEGREES">-33.9598</Latitude>
+      <Longitude unit="DEGREES">137.6221</Longitude>
+      <Elevation unit="METERS">21.0</Elevation>
+      <Site>
+        <Name>Wallaroo, South Australia, Australia</Name>
+      </Site>
+      <Channel code="HHE" locationCode="60">
+        <Latitude unit="DEGREES">-33.9598</Latitude>
+        <Longitude unit="DEGREES">137.6221</Longitude>
+        <Elevation unit="METERS">21.0</Elevation>
+        <Depth unit="METERS">2.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>632501043.2</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="HHN" locationCode="60">
+        <Latitude unit="DEGREES">-33.9598</Latitude>
+        <Longitude unit="DEGREES">137.6221</Longitude>
+        <Elevation unit="METERS">21.0</Elevation>
+        <Depth unit="METERS">2.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>632501043.2</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="HHZ" locationCode="60">
+        <Latitude unit="DEGREES">-33.9598</Latitude>
+        <Longitude unit="DEGREES">137.6221</Longitude>
+        <Elevation unit="METERS">21.0</Elevation>
+        <Depth unit="METERS">2.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>632501043.2</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="HNE" locationCode="AB">
+        <Latitude unit="DEGREES">-33.9598</Latitude>
+        <Longitude unit="DEGREES">137.6221</Longitude>
+        <Elevation unit="METERS">21.0</Elevation>
+        <Depth unit="METERS">2.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>428657.86880000005</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S**2</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="HNN" locationCode="AB">
+        <Latitude unit="DEGREES">-33.9598</Latitude>
+        <Longitude unit="DEGREES">137.6221</Longitude>
+        <Elevation unit="METERS">21.0</Elevation>
+        <Depth unit="METERS">2.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>428657.86880000005</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S**2</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="HNZ" locationCode="AB">
+        <Latitude unit="DEGREES">-33.9598</Latitude>
+        <Longitude unit="DEGREES">137.6221</Longitude>
+        <Elevation unit="METERS">21.0</Elevation>
+        <Depth unit="METERS">2.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <SampleRate>100.0</SampleRate>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>428657.86880000005</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S**2</Name>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+</FDSNStationXML>
