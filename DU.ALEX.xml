@@ -3,37 +3,39 @@
   <Source>ObsPy-Scripted</Source>
   <Module>ObsPy 1.4.2</Module>
   <ModuleURI>https://www.obspy.org</ModuleURI>
-  <Created>2025-09-10T03:08:47.770024Z</Created>
+  <Created>2026-06-08T05:46:52.933741Z</Created>
   <Network code="DU">
-    <Station code="ALEX">
+    <Station code="ALEX" startDate="2025-09-26T00:00:00.000000Z" endDate="2025-11-28T00:00:00.000000Z">
       <Latitude unit="DEGREES">-33.89897794</Latitude>
       <Longitude unit="DEGREES">151.1991129</Longitude>
       <Elevation unit="METERS">14.0</Elevation>
       <Site>
         <Name>Alexandria, New South Wales, Australia</Name>
       </Site>
-      <Channel code="HHZ" locationCode="00">
+      <Channel code="HHZ" startDate="2025-09-26T00:00:00.000000Z" endDate="2025-11-28T00:00:00.000000Z" locationCode="00">
         <Latitude unit="DEGREES">-33.89897794</Latitude>
         <Longitude unit="DEGREES">151.1991129</Longitude>
         <Elevation unit="METERS">14.0</Elevation>
         <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
         <SampleRate>200.0</SampleRate>
         <Response>
           <InstrumentSensitivity>
             <Value>277725470.0</Value>
-            <Frequency>5</Frequency>
+            <Frequency>5.0</Frequency>
             <InputUnits>
               <Name>M/S</Name>
-              <Description>Velocity in meters per second</Description>
+              <Description>Velocity in metres per second</Description>
             </InputUnits>
             <OutputUnits>
               <Name>COUNTS</Name>
-              <Description>None</Description>
+              <Description>Digital counts</Description>
             </OutputUnits>
           </InstrumentSensitivity>
           <Stage number="1">
             <PolesZeros>
-              <Description>Mark Products L-4</Description>
+              <Description>Mark Products L-4C</Description>
               <InputUnits>
                 <Name>M/S</Name>
               </InputUnits>
@@ -41,7 +43,7 @@
                 <Name>V</Name>
               </OutputUnits>
               <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
-              <NormalizationFactor>1.841586975040651</NormalizationFactor>
+              <NormalizationFactor>0.9988843302409943</NormalizationFactor>
               <NormalizationFrequency unit="HERTZ">5.0</NormalizationFrequency>
               <Zero number="0">
                 <Real>0.0</Real>
@@ -62,7 +64,7 @@
             </PolesZeros>
             <StageGain>
               <Value>176.11</Value>
-              <Frequency>5</Frequency>
+              <Frequency>5.0</Frequency>
             </StageGain>
           </Stage>
           <Stage number="2">
@@ -79,7 +81,7 @@
             </Coefficients>
             <StageGain>
               <Value>1577000</Value>
-              <Frequency>5</Frequency>
+              <Frequency>5.0</Frequency>
             </StageGain>
           </Stage>
         </Response>
